@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="Demo.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Blog</title>
+    <link href="theme/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="home" runat="server">
+        <div id="menutop">
+            <div id="menu">
+                <ul>
+                    <li><a href="Index.aspx">Trang chủ</a></li>
+                    <asp:Repeater ID="rpBanTin" runat="server">
+                        <ItemTemplate>
+                            <li><a href="bantin.aspx?idbantin=<%# Eval("IDBanTin") %>"><%# Eval("noiDung") %></a></li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                   <%
+                 if ((Boolean)Session["allow"] == false)
+                    {
+                   %>
+                    
+                    <li><a href="login.aspx">LOGIN</a></li>
+                    <li><a href="register.aspx">REGISTER</a></li>
+
+                    <%
+                    }
+                 else
+                     {
+
+                    %>
+                    <li><a href="ChiTietADD.aspx">Thêm </a></li>
+                    <li><a href="QLCC.aspx">Chỉnh sửa </a></li>
+                  <li><a href="logout.aspx">LOGOUT</a></li>
+                  
+
+                    <%} %>
+                    </ul>
+            </div>
+        </div>
+         <div id="maincontent">
+                  <div id="rightcontent">
+                      
+                  </div>
+                  <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div id="maincontent">
+             <div id="rightcontent">
+                 <h1>Quảng cáo</h1>
+                 <div id="ndright">
+                     <a href="https://www.thegioididong.com/" target="_blank"><img src="https://cdn.tgdd.vn/2019/06/banner/800-300-800x300-(2).png" width="320px" /></a>
+                 </div>
+             </div>
+            </div>
+        <div id="footer">
+                <div id="ndfooter">
+               @CopyRight: Nguyễn Thị Nhật  <br />                            
+                Liên hệ trực tuyến qua Email: nhatnguyen727@gmail.com 
+
+                </div>
+
+            </div>
+    </form>
+</body>
+</html>

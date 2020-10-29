@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Demo">
+  <DataContextMoniker Name="/DemoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="22f05300-340a-4f5f-917e-cf57475839a5" absoluteBounds="0.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DemoDataContext/DangNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78b7f59d-0b10-4ef1-8f16-320cd5dcc82b" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad208cda-773d-4ec5-8127-cb9a3d1f33ab" absoluteBounds="5.5, 1.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DemoDataContext/Bantin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9749c87f-45db-4794-b742-54cc2dd94193" absoluteBounds="5.515, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab8cbfc7-f6f7-4ba6-811d-1eef82003a74" absoluteBounds="8, 1.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DemoDataContext/ChiTiet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="644d8286-7420-44fb-9118-190a12de88ba" absoluteBounds="8.015, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.5 : 1.90949625651042); (8 : 1.90949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DemoDataContext/Bantin/Bantin_ChiTiet" />
+      <nodes>
+        <classShapeMoniker Id="ad208cda-773d-4ec5-8127-cb9a3d1f33ab" />
+        <classShapeMoniker Id="ab8cbfc7-f6f7-4ba6-811d-1eef82003a74" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a9835923-3be0-45b6-a1ea-ef096f3a98b6" absoluteBounds="4.25, 3.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DemoDataContext/comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d74a414-4a13-4445-a259-a01967c989e3" absoluteBounds="4.265, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
